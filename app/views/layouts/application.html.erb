@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+  <div class="ui small inverted menu">
+  <div class= "ui container">
+    <%= render 'layouts/navigation.html.erb' %>
+  </div>
+</div>
+    <div class="ui container">
+    <%= render 'layouts/error_messages' %>
+      <%= yield %>
+    </div>
   </body>
 </html>
